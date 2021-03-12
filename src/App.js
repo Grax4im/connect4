@@ -1,8 +1,8 @@
-import { Board } from "./src/components/Board";
+//import { Board } from "./components/Board";
 import './App.css';
-import { MatrixProvider } from "./src/context/MatrixContext";
-import { Button } from "./src/components/Button";
-import { Turno } from "./src/components/Turno";
+import { MatrixProvider } from "./context/MatrixContext.js";
+import { Button } from "./components/Button";
+import { Turno } from "./components/Turno"
 
 function App() {
   return (
