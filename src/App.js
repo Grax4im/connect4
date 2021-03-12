@@ -1,24 +1,21 @@
-import logo from './logo.svg';
+import { Board } from "./components/Board";
 import './App.css';
+import { MatrixProvider } from "./context/MatrixContext";
+import { Button } from "./components/Button";
+import { Turno } from "./components/Turno";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <MatrixProvider>
+      <div className="App">
+      <header>
+            <h1>Divirta-se jogando Connect 4 😄</h1>
+        </header>
+        <Board />
+        <Turno />
+        <Button />
+      </div>
+    </MatrixProvider>
   );
 }
 
