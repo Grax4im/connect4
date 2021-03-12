@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { MatrixContext } from "MatrixContext";
+import { MatrixContext } from "./MatrixContext";
 
 export function Button () {
 
