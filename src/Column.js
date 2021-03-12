@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { MatrixContext } from "../context/MatrixContext";
+import { MatrixContext } from "./MatrixContext";
 
 import { Row } from "./Row";
 
