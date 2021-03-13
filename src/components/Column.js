@@ -18,10 +18,12 @@ export function Column(props) {
     function handleClickColumn() {
             if(!winner) {
                 const counter = matrix[x].indexOf(0);
-                setMatrix(matrix.map((valor, index) => index === parseInt(props.xIndex) ? valor.map((valor, index) => index === counter ? player :valor)
-                : valor))
-                changePlayer()
-                setLastMovie({column: x, row: counter});
+                if(counter !== -1) {
+                    setMatrix(matrix.map((valor, index) => index === parseInt(props.xIndex) ? valor.map((valor, index) => index === counter ? player :valor)
+                    : valor))
+                    changePlayer()
+                    setLastMovie({column: x, row: counter});
+                }
             }
     }
     
